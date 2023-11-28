@@ -1,13 +1,14 @@
 class GoogleApiService
+  GOOGLE_API_URL = "https://vision.googleapis.com/v1/images:annotate".freeze
 
   def self.analyze_image(image_url)
-    response = HTTParty.post("https://vision.googleapis.com/v1/images:annotate?key=#{ENV['GOOGLE_API_KEY']}",
+    response = HTTParty.post("#{GOOGLE_API_URL}?key=#{ENV['GOOGLE_API_KEY']}",
                             body: vision_api_payload(image_url).to_json,
                             headers: {'Content-Type' => 'application/json'})
 
     parsed_response = response.parsed_response
-    trash = find_info(parsed_response)
-    p trash[0]["name"]
+    trash_json = find_info(parsed_response)
+    p trash_json[0]["name"]
   end
 
   private
