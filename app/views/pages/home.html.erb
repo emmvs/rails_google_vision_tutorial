@@ -1,2 +1,6 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container m-3">
+  <%= form_with url: vision_analyze_path, method: :post, local: true do |form| %>
+    <%= form.text_field :image_url, placeholder: 'Enter Image URL' %>
+    <%= form.submit 'Analyze Image' %>
+  <% end %>
+</div>
