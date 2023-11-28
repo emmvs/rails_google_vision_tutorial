@@ -28,35 +28,27 @@ cd dropworks
 
 ### Step 3: Configure the Application
 ## Environment Variables:
-Create a .env file in the root of the project
-Add the Google API key to the .env file:
-- makefile
-Copy code
+- Create a .env file in the root of the project
+- Add the Google API key to the .env file:
+- Copy this code and put your API key:
 ```bash
 GOOGLE_API_KEY=your_api_key_here
 ```
 
-- Ensure the .env file is added to .gitignore.
-Install Dependencies:
-
-Run bundle install to install required gems.
+- Ensure the .env file is added to .gitignore
+- Install Dependencies:
+- Run bundle install to install required gems
 
 ### Step 4: Running the Application
-Start the Rails Server:
+- Start the Rails Server
+- Use the command rails server to start the application
+- Open a web browser and navigate to http://localhost:3000 to access the application.
 
-Use the command rails server to start the application.
-Access the Application:
+### Usage
+- How to send an image URL to the API
+- Interpreting the response from the API
+- Any application-specific features or functionalities
 
-Open a web browser and navigate to http://localhost:3000 to access the application.
-Usage
-(Describe how to use your specific implementation of the Google Cloud Vision API in the Dropworks application. This might include:)
-
-How to send an image URL to the API.
-Interpreting the response from the API.
-Any application-specific features or functionalities.
-Contributing
-Contributions to Dropworks are always welcome. Feel free to fork, modify, and send pull requests for any enhancements or bug fixes.
-[](url)
 ### Additional Resources
 - [Google Cloud Vision API Documentation]([url](https://cloud.google.com/vision/docs)https://cloud.google.com/vision/docs)
 - [Rails Documentation]([url](https://guides.rubyonrails.org/)https://guides.rubyonrails.org/)
