@@ -19,7 +19,7 @@ class GoogleApiService
           features: [
             { type: "LABEL_DETECTION", maxResults: 10 },
             { type: "OBJECT_LOCALIZATION", maxResults: 10 }
-            # ... other features ...
+            # ... other features of the Google Vision ...
           ],
           image: { source: { imageUri: image_url } }
         }
