@@ -1,5 +1,4 @@
 class GoogleApiService
-  require 'httparty'
 
   def self.analyze_image(image_url)
     response = HTTParty.post("https://vision.googleapis.com/v1/images:annotate?key=#{ENV['GOOGLE_API_KEY']}",
@@ -8,7 +7,7 @@ class GoogleApiService
 
     parsed_response = response.parsed_response
     trash = find_info(parsed_response)
-    p trash[0]["name"] 
+    p trash[0]["name"]
   end
 
   private
