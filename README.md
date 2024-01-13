@@ -12,13 +12,13 @@ Before you begin, ensure you have the following:
 
 ## Getting Started
 
-### Step 1: Clone the Repository
+### Step 1: Clone this Repository
 
-Clone the Dropworks repository to your local machine:
+Clone the rails_google_vision_tutorial repository to your local machine:
 
 ```bash
-git clone git@github.com:bernalisi/dropworks.git
-cd dropworks
+git clone git@github.com:emmvs/rails_google_vision_tutorial.git
+cd rails_google_vision_tutorial
 ```
 
 ### Step 2: Set Up Google Cloud Vision API
